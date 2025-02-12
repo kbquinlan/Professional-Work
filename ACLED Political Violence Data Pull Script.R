@@ -52,8 +52,8 @@ end_date <- floor_date(max(seq.Date(from = Sys.Date() - 395, to = Sys.Date(), by
 # Using the acled.api package, pull the data for the last 13 months using start_date and end_date
 # WARNING: This will pull in a large amount of data and may take a long time to run
 # First test of data pull was 349,013 rows; a lot conflict, a lot of data!
-acled <- acled.api(email.address = "kquinlan@cepps.org", 
-                   access.key = "Gx50FkxMAnPsl9E6T5zL", 
+acled <- acled.api(email.address = "{email}", 
+                   access.key = "{passcode}", 
                    start.date = start_date, 
                    end.date = end_date,
                    all.variables = TRUE) |> 
